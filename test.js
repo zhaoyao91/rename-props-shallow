@@ -12,6 +12,16 @@ describe('rename', () => {
     })
   })
 
+  test('override', () => {
+    const obj = {name: 'bob', age: 20}
+    const newObj = rename({name: 'age'})(obj)
+
+    expect(newObj).not.toBe(obj)
+    expect(newObj).toEqual({
+      age: 'bob'
+    })
+  })
+
   test('undefined changes', () => {
     const obj = {name: 'bob', age: 20}
     const newObj = rename()(obj)
