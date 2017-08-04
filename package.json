@@ -1,0 +1,14 @@
+{
+  "name": "rename-props-shallow",
+  "version": "1.0.0",
+  "description": "Rename js object fields and return a shallow copy.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "zhaoyao91 <zhaoyao91@163.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^20.0.4"
+  }
+}
